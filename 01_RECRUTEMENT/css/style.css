@@ -1,0 +1,207 @@
+
+.page_container{ background: #569cb2; }
+
+/* ui */
+
+.bt_continuer{ width: 6em; height: 13em;  background-image: url('../img/bt_continuer.svg'); }
+.bt_consulter_reponses{ width: 18em; height: 10em;  background-image: url('../img/bt_consulter_reponses.svg'); }
+.bt_passerlejeu{ width: 5.5em; height: 10em; background-image: url('../img/bt_passerlejeu.svg'); }
+.bt_avousdejouer{ width: 18em; height: 10em;  background-image: url('../img/bt_avousdejouer.svg'); }
+.bt_revoir{ width: 9em; height: 13em;   background-image: url('../img/bt_revoir.svg'); }
+
+/* game1 */
+
+.game1a .bt_hd_container{  animation: anim_zoom_bounce .3s ease-out 4.2s 1 normal forwards; }
+.game1a .bt_bc_container{  animation: anim_zoom_bounce .3s ease-out 4.5s 1 normal forwards; }
+.game1b .slide_bg{ position: relative; width: 100%; height: auto; }
+.game1b .bt_valider_annonce{ width: 18em; height: 7em; left: 50%;  margin-left:-9em; bottom: 7em; background-image: url('../img/bt_valider_annonce.svg'); }
+.game1b .game1b_prev{ background-image: url('../img/game1b_prev.png'); left: 50%;     width: 11em; height: 4em;  top: 2em; margin-left: -5.5em; }
+.game1b .game1b_next{ background-image: url('../img/game1b_next.png');  left: 50%;     width: 11em; height: 4em; bottom: 1em;  margin-left: -5.5em;  }
+.game1b .bt_video2{  background-image: url('../img/game1c_btNext.svg');  width: 6em; height:6em; right: 4em; top: 10em }
+.game1b .game1_3slides{  height: 300%; top: 0; position: absolute; display: table; width: 100%; height: auto; position: absolute; transition:all .3s cubic-bezier(.29,.04,0,.99); }
+.game1b.slide1visible .game1_3slides{ top: 0;  }
+.game1b.slide2visible .game1_3slides{ top: -100%;  }
+.game1b.slide3visible .game1_3slides{ top: -200%;  }
+.game1b .game1_slide{ display: block; margin:0; clear: both; width: 100%; height:auto; position: relative; }
+.game1b .game1_3flags{ position: absolute; left:3%; top: 0;   z-index: 100; width: 8%; height: 17em }
+.game1b .game1bis_3flags{ left:1%; width: 13%;  }
+.game1b .game1_3flags .container{ top: 0; overflow: hidden; width: 100%; height: 8em;  position: absolute; }
+.game1bbis .game1_3flags .container{   top: 3em; overflow: hidden; width: 90%; left: 20%; }
+.game1b .game1_3flags .container .slider{ height: 30em; top: 0; position: absolute; width: 100%; transition:all .21s;  }
+.game1b.slide1visible .game1_3flags .slider{ top: 0; }
+.game1b.slide2visible .game1_3flags .slider{ top: -10em; }
+.game1b.slide3visible .game1_3flags .slider{ top: -20em; }
+.game1b .flag1{ top: 0; position: relative; width: 100%; height: 10em; background-image: url('../img/game1b_flag1.png');  background-repeat: no-repeat; background-size: 60%; background-position: center; ; }
+.game1b .flag2{ top: 0; position: relative; width: 100%; height: 10em; background-image: url('../img/game1b_flag2.png'); background-repeat: no-repeat; background-size: 60%; background-position: center; }
+.game1b .flag3{ top: 0; position: relative; width: 100%; height: 10em; background-image: url('../img/game1b_flag3.png');  background-repeat: no-repeat; background-size: 60%; background-position: center;  }
+.game1bbis .flag1{ top: 0; position: relative; width: 70%; height: 10em; background-image: url('../img/game1bbis_flag1.svg');  background-repeat: no-repeat; background-size: 60%; background-position: center; ; }
+.game1bbis .flag2{ top: 0; position: relative; width: 70%; height: 10em; background-image: url('../img/game1bbis_flag2.svg'); background-repeat: no-repeat; background-size: 60%; background-position: center; }
+.game1bbis .flag3{ top: 0; position: relative; width: 70%; height: 10em; background-image: url('../img/game1bbis_flag3.svg');  background-repeat: no-repeat; background-size: 60%; background-position: center;  }
+.game1b .qcm_container {  position: absolute; }
+.game1b .qcm_container li  { opacity: 0;  transform:scale(1); animation: anim_fadeIn 1.3s ease-out .3s 1 normal forwards;  }
+.game1b .qcm_container li{ position: absolute; width: 2.3em; height: 2.3em;  background-image:url('../img/case_blanche.svg'); background-repeat: no-repeat; background-size:100% auto ; }
+.game1b .qcm_container li:hover{ cursor: pointer; }
+.game1b .qcm_container li div{ display: none;   animation:none; transform:scale(0); position: absolute; width: 1.7em; height: 1.7em; top: -0.2em; left: 0em; background-repeat: no-repeat; background-size: 100% 100%;    width: 73%; height: 110%; position: absolute; left: 12%; top: -20%; }
+.game1b .qcm_container li.active div{ display: block; animation: anim_zoom_bounce .2s ease-out 0s 1 normal forwards; background-image:url('../img/game1b_case_active.svg');    }
+.game1b .qcm1 {  left: 40%;  top: 12%; width: 3em; height: 10em;  }
+.game1b .qcm1 li{ width: 2em; height: 2em;  background-image:url('../img/case_blanche2.svg');  }
+.game1b .qcm1 li:nth-child(1){  left: 0%;  top: 0%; }
+.game1b .qcm1 li:nth-child(2){  left: 0%; top: 25%; }
+.game1b .qcm1 li:nth-child(3){  left: 0%; top: 50%; }
+.game1b .qcm1 li:nth-child(4){  left: 0%; top: 75%; }
+.game1b .qcm2 {  left: 23.5%; top: 50.5%;  width: 3em; height: 19.5em;  }
+.game1b .qcm2 li:nth-child(1){  left: 0%; top: 0%; }
+.game1b .qcm2 li:nth-child(2){  left: 0%; top: 15%; }
+.game1b .qcm2 li:nth-child(3){  left: 0%; top: 30%; }
+.game1b .qcm2 li:nth-child(4){  left: 0%; top: 45%; }
+.game1b .qcm2 li:nth-child(5){  left: 0%; top: 60%; }
+.game1b .qcm2 li:nth-child(6){  left: 0%; top: 75%; }
+.game1b .qcm2 li:nth-child(7){  left: 0%; top: 90%; }
+.game1b .qcm3 { left: 29%; top: 29%;  width: 3em; height: 6em;  }
+.game1b .qcm3 li:nth-child(1){  left: 0%; top: 0%; }
+.game1b .qcm3 li:nth-child(2){  left: 0%; top: 50%; }
+.game1b .qcm4 { left: 49%; top: 29%; width: 3em; height: 6em;  }
+.game1b .qcm4 li:nth-child(1){  left: 0%; top: 0%; }
+.game1b .qcm4 li:nth-child(2){  left: 0%; top: 50%; }
+.game1b .qcm5 { left: 23.2%; top: 56%;  width: 3em; height: 9.5em;}
+.game1b .qcm5 li:nth-child(1){  left: 0%; top: 0%; }
+.game1b .qcm5 li:nth-child(2){  left: 0%; top: 30%; }
+.game1b .qcm5 li:nth-child(3){  left: 0%; top: 60%; }
+.game1b .qcm6 { left: 43.5%; top: 55.5%; width: 3em;  height: 9.5em; }
+.game1b .qcm6 li:nth-child(1){  left: 0%;  top: 0%; }
+.game1b .qcm6 li:nth-child(2){  left: 0%; top: 30%; }
+.game1b .qcm6 li:nth-child(3){  left: 0%; top: 60%; }
+.game1b .qcm7 {  left: 36.5%; top: 27.5%; width: 3em; height: 11.5em;  }
+.game1b .qcm7 li:nth-child(1){  left: 0%; top: 0%; }
+.game1b .qcm7 li:nth-child(2){  left: 0%; top: 25%; }
+.game1b .qcm7 li:nth-child(3){  left: 0%; top: 50%; }
+.game1b .qcm7 li:nth-child(4){  left: 0%; top: 75%; }
+.game1c { background:white; }
+.game1c .showScore_a{  font-family: gobold; font-size: 8em; color: #fff; position: absolute; left: 50%; margin-left:-0.5em; top: 1.5em; opacity: 0; animation: anim_showScore .6s ease-out 0s 1 normal forwards; }
+.game1c .showScore_b{ font-family: gobold; font-size: 8em; color: #fff; position: absolute; left: 50%; margin-left:-1em; top: .75em; opacity: 0; animation: anim_showScore .6s ease-out 0s 1 normal forwards; }
+.game1c .showScore_c{ font-family: gobold; font-size: 8em; color: #fff; position: absolute; left: 50%; margin-left:-1em; top: 1em; opacity: 0; animation: anim_showScore .6s ease-out 0s 1 normal forwards; }
+.game1c .reveal1  { opacity: 0; animation: anim_zoom_bounce .6s ease-out 3.4s 1 normal forwards;  }
+.game1bbis .game1bbis_bt_end{     width: 6em;   height: 10em;  left: 50%;  margin-left: -3em;  bottom: 5em; background-image: url('../img/game1bbis_bt_end.svg'); }
+
+/* video 2 */
+
+.video2 .ui1{   opacity: 0; transition:opacity 1s cubic-bezier(.17,.67,.27,1); }
+.video2 .active{   opacity: 1!important }
+.video2 .ui1 .bt1{ animation: anim_video2_ui1_bt1 1s ease-in-out 0s infinite normal forwards; width: 17em; height: 12em; left: 11%; top: 53%; background-image: url('../img/video2_ui1_bt1.png'); background-size: 100% auto; background-repeat: no-repeat;  }
+
+/* game 2 */
+
+.game2a .reveal1  { opacity: 0; animation: anim_zoom_bounce .6s ease-out 2.4s 1 normal forwards;  }
+.game2a .reveal2  { opacity: 0; animation: anim_zoom_bounce .5s ease-out 2.8s 1 normal forwards;  }
+.game2b .slides_container{  width: 100%; height: 100%; position: fixed;  }
+.game2b .slide{ width: 100%; height: 100%; top:0; left:0; position: fixed; display: none; }
+.game2b .game2b1_visible .game2b1{ display: block!important; }
+.game2b .game2b2_visible .game2b2{ display: block!important; }
+.game2b .game2b3_visible .game2b3{ display: block!important; }
+.game2b .game2b4_visible .game2b4{ display: block!important; }
+.game2b .game2b5_visible .game2b5{ display: block!important; }
+.game2b .qcm_container{  width: 3em; height: 9.5em; top: 49%; left: 21%; }
+.game2b .qcm_container li{ position: absolute; width: 30em; height: 3em;  background-image:url('../img/game2b_case_bg.svg'); background-repeat: no-repeat; background-size:2.2em auto ;   }
+.game2b .qcm_container li:hover{ cursor:pointer;  }
+.game2b .qcm_container li.case_a{  background-image:url('../img/game2b_case_a.svg');  }
+.game2b .qcm_container li.case_a.active{ background-image:url('../img/game2b_case_a_actif.svg');  }
+.game2b .qcm_container li.case_b{ background-image:url('../img/game2b_case_b.svg');  }
+.game2b .qcm_container li.case_b.active{ background-image:url('../img/game2b_case_b_actif.svg'); }
+.game2b .qcm_container li.case_c{ background-image:url('../img/game2b_case_c.svg');  }
+.game2b .qcm_container li.case_c.active{ background-image:url('../img/game2b_case_c_actif.svg'); }
+.game2b .qcm_container li.active div{  background-image:url('../img/game2b_case_bg_activ.svg');   }
+.game2b .qcm_container li div span{ position: absolute; top: 0.1em; left: 0.8em; color: black; font-size: 1; }
+.game2b .qcm1{ height: 9.5em; top: 49%; left: 21%;  }
+.game2b .qcm2{ left: 25%; }
+.game2b .qcm3{ left: 19%; height: 20%;  }
+.game2b .qcm4{  left: 26%; }
+.game2b .qcm5{  left: 21.5%; }
+.game2b .qcm_container li:nth-child(1){  left: 0; top: 0; }
+.game2b .qcm_container li:nth-child(2){  left: 0; top: 40%; }
+.game2b .qcm_container li:nth-child(3){  left: 0; top: 80%; }
+.game2b .slide_active .reveal1  { opacity: 0; animation: anim_zoom_bounce2 .6s ease-out .4s 1 normal forwards;  }
+.game2b .slide_active .reveal2  { opacity: 0; animation: anim_zoom_bounce2 .6s ease-out .6s 1 normal forwards;  }
+.game2b .slide_active .reveal3  { opacity: 0; animation: anim_zoom_bounce2 .6s ease-out .8s 1 normal forwards;  }
+
+.game2b .bt_continuer{ opacity: 0;  transform:scale(0); display: none; bottom:3em; top: auto; width: 18em; height: 9em; left: 50%;  margin-left:-9em;  background-image: url('../img/game2_bt_continuer.svg'); }
+.game2b .bt_continuer.actif{ opacity: 0; display: block; animation: anim_zoom_bounce .43s ease-out 0s 1 normal forwards; }
+
+.game2b .bt_valider{ display: none; bottom:3em; top: auto; width: 18em; height: 9em; left: 50%;  margin-left:-9em;  }
+.game2b .bt_valider.actif{  display: block; }
+.game2b .bt_valider .bouton{ transform:scale(0); opacity: 0; z-index: 10;  position: absolute; width: 17em; height: 10em; left: 0;  top:3.6em; background-image: url('../img/game2_bt_valider.svg'); background-size: 100% auto; background-repeat: no-repeat;  }
+.game2b .bt_valider.actif .bouton{   animation: anim_zoom_bounce .4s ease-out 1s 1 normal forwards; position: absolute;  }
+.game2b .bt_valider .pouceEnLair{  transform:scale(0); opacity: 0; z-index: 9; position: absolute; width: 8em; height: 8em; left:5em; top: 0.2em; background-image: url('../img/bt_pouceEnLair.svg');  background-size: 100% auto;  background-repeat: no-repeat;  }
+.game2b .bt_valider.actif .pouceEnLair{  animation: anim_zoom_bounce .4s ease-out 1.6s 1 normal forwards; position: absolute;  }
+
+
+
+.game2c{ background:white; }
+.game2c .reveal1  { opacity: 0; animation: anim_zoom_bounce .6s ease-out 3.4s 1 normal forwards;  }
+
+/* game 3 */
+
+.game3a .reveal1  { opacity: 0; animation: anim_zoom_bounce .6s ease-out 2.4s 1 normal forwards;  }
+.game3a .reveal2  { opacity: 0; animation: anim_zoom_bounce .5s ease-out 2.8s 1 normal forwards;  }
+.game3b .game3b_item{ z-index: 2;  position: absolute; left: 10%; top: 30%; width: 30%; height: 15%; background-size: 100% auto; background-repeat: no-repeat; }
+.game3b .game3b_item:hover{ cursor: move; }
+.game3b .game3b_item1{  background-image:url('../img/game3b_item1.svg'); top: 20%;   }
+.game3b .game3b_item2{  background-image:url('../img/game3b_item2.svg'); top: 35%; left: 15%;  }
+.game3b .game3b_item3{  background-image:url('../img/game3b_item3.svg'); top: 50%;   }
+.game3b .game3b_item4{  background-image:url('../img/game3b_item4.svg'); top: 65%;  left: 15%; }
+.game3b .game3b_item5{  background-image:url('../img/game3b_item5.svg'); top: 80%;  }
+.game3b .game3b_item_zone{  z-index: 1; background-image:url('../img/game3b_itemzone_bg.svg'); position: absolute; left: 60%; top: 30%; width: 30%; height: 12%; background-size: 100% auto; background-repeat: no-repeat; background-position: center  }
+.game3b .game3b_item_zone1{  top: 15%;   }
+.game3b .game3b_item_zone2{  top: 30%;   }
+.game3b .game3b_item_zone3{  top: 45%;   }
+.game3b .game3b_item_zone4{  top: 60%;   }
+.game3b .game3b_item_zone5{  top: 75%;  }
+.game3b .dropRed{ background:red; opacity: 0.2 }
+.game3b .dropGreen{ background:green; opacity: 0.2 }
+.game3b .dropWhite{ background:white; }
+.game3b .bt_valider{ z-index: 10; display: none;  width: 19em; height: 7em; left: 20%;  top:44%;  }
+.game3b .bt_valider .bouton{ opacity: 0; z-index: 10;  position: absolute; width: 19em; height: 7em; left: 0%;  top:0%; background-image: url('../img/game3b_bt_validez.svg'); background-size: 100% auto; background-repeat: no-repeat;  }
+.game3b .bt_valider.actif{  display: block; }
+.game3b .bt_valider .pouceEnLair{ opacity: 0; z-index: 9; position: absolute; width: 8em; height: 8em; left:5em; top:-3em;  background-image: url('../img/bt_pouceEnLair.svg');  background-size: 100% auto;  background-repeat: no-repeat;  }
+.game3c{ background:#48c93f; }
+.game3c #showScore{ font-family: gobold; font-size: 8em; color: #fff; position: absolute; left: 40%; top: 1.7em; opacity: 0; animation: anim_showScore .6s ease-out 0s 1 normal forwards; }
+.game3b .bt_valider.actif .bouton{  animation: anim_zoom_bounce .4s ease-out 0s 1 normal forwards; position: absolute;  }
+.game3b .bt_valider.actif .pouceEnLair{  animation: anim_zoom_bounce .4s ease-out .4s 1 normal forwards; position: absolute;  }
+
+/* video 4 */
+
+.video4 .ui1{  transform:scale(0); opacity: 0; transition:all .6s cubic-bezier(.17,.67,.27,1); }
+.video4 .ui2{  transform:scale(0);opacity: 0; transition:all .3s ease-out; }
+.video4 .ui3{ transform:scale(0); opacity: 0; transition:opacity .3s ease-out; }
+.video4 .active{  transform:scale(1); opacity: 1!important }
+.video4 .ui1 .bt1{ animation: anim_video4_ui1_bt1 1s ease-in-out 0s infinite normal forwards; width: 40em; height: 6em; left: 50%; margin-left: -20em; top: 50%;background-image: url('../img/video4_ui1_bt1.svg'); }
+.video4 .ui2 .bt1{ animation: anim_video4_ui2_bt1 1s ease-in-out 0s infinite normal forwards; width: 7em; height: 7.5em; left: 50%; margin-left: -3.5em; top: 55%; background-image: url('../img/video4_ui2_bt1.svg'); }
+.video4 .ui3 .bt1{ animation: anim_video4_ui3_bt 1s ease-in-out 0s infinite normal forwards; opacity: 0; width: 6.4em; height: 11em; left: 39.9%; top: 17%; background-image: url('../img/video4_ui3_bt1.png'); }
+.video4 .ui3 .bt2{ animation: anim_video4_ui3_bt 1s ease-in-out 0s infinite normal forwards; opacity: 0;   width: 7.3em; height: 8em; left: 52%; top: 18%;background-image: url('../img/video4_ui3_bt2.svg'); }
+.video4 .ui3 .bt3{ animation: anim_video4_ui3_bt 1s ease-in-out 0s infinite normal forwards; opacity: 0;  width: 12em; height: 11em; left: 44%; top: 93%;background-image: url('../img/video4_ui3_bt3.svg'); }
+.video4 .ui3.active { animation: anim_fadeIn .6s ease-out .1s 1 normal forwards; }
+
+/* video 1234 */
+
+.video1234{ background: #efefef }
+
+
+/* anims specifiques */
+
+
+  @keyframes anim_video4_ui2_bt1{
+      0% { opacity:  0.8; transform: scale(1.05) }
+      50% { opacity:  1; transform: scale(1) }
+      100% { opacity:  0.8; transform: scale(1.05) }
+  }
+
+  @keyframes anim_video2_ui1_bt1{
+      0% { opacity:  0.8; transform: scale(1.05) }
+      50% { opacity:  1; transform: scale(1) }
+      100% { opacity:  0.8; transform: scale(1.05) }
+  }
+
+  @keyframes anim_video4_ui3_bt{
+      0% { opacity:  0.8; transform: scale(1.025) }
+      50% { opacity:  1; transform: scale(1) }
+      100% { opacity:  0.8; transform: scale(1.025) }
+  }

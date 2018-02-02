@@ -1,0 +1,155 @@
+
+/* game1 */
+
+.game1{  background: #fcc600; }
+.game1b .bt_container{  transform:scale(0); position: absolute;  width: 18em; height: 5em; left: 28%;  margin-left:-9em; top: 60%; opacity: 0;  }
+.game1b .bt_container.actif{  animation: anim_zoom_bounce .4s ease-out .3s 1 normal forwards; }
+.game1b .bt_container .bt_valider_la_lettre{  width: 100%; height: 8em;  background-image: url('../img/bt_valider_la_lettre.svg'); }
+
+.game1b .game1b_item{ z-index: 2;  position: absolute; left: 12%; top: 90%; width: 18%; height: 15%; background-size: 100% auto; background-repeat: no-repeat; }
+.game1b .game1b_item:hover{ cursor: move; }
+.game1b .game1b_item1{  background-image:url('../img/game1b_item1.svg'); width: 18%; top: 20%;  left: 12%;  }
+.game1b .game1b_item2{  background-image:url('../img/game1b_item2.svg'); width: 18%; top: 34%; left: 8%;  }
+.game1b .game1b_item3{  background-image:url('../img/game1b_item3.svg'); width: 20%; top: 47%;  left: 10%;  }
+.game1b .game1b_item4{  background-image:url('../img/game1b_item4.svg'); width: 20%; top: 59%;  left: 7%;  }
+.game1b .game1b_item5{  background-image:url('../img/game1b_item5.svg'); width: 15%; top: 70%; left: 10%; }
+.game1b .game1b_item6{  background-image:url('../img/game1b_item6.svg'); width: 21%; top: 83%; left: 18%;}
+.game1b .game1b_item7{  background-image:url('../img/game1b_item7.svg'); width: 17%; top: 70%; left: 28%;  }
+.game1b .game1b_item8{  background-image:url('../img/game1b_item8.svg'); width: 17%; top: 55%;  left: 30%; }
+.game1b .game1b_item9{  background-image:url('../img/game1b_item9.svg'); width: 13%; top: 42%;  left: 33%; }
+.game1b .game1b_item10{  background-image:url('../img/game1b_item10.svg'); width: 16%; top: 28%; left: 31%; }
+
+.game1b .game1b_item_zone{  z-index: 1; background-image:url('../img/game3b_itemzone_bg.svg'); background-position: top left ; position: absolute; left: 56%; top: 30%; width: 34%; height: 12%; background-size: 100%; background-repeat: no-repeat; }
+.game1b .game1b_item_zone1{  top: 10%;   background-image:url('../img/game1b_item_zone1_bg.svg');  }
+.game1b .game1b_item_zone2{  top: 19.5%;   background-image:url('../img/game1b_item_zone2_bg.svg');  }
+.game1b .game1b_item_zone3{  top: 27%;   background-image:url('../img/game1b_item_zone3_bg.svg');  }
+.game1b .game1b_item_zone4{  top: 32.8%;   background-image:url('../img/game1b_item_zone4_bg.svg');  }
+.game1b .game1b_item_zone5{  top: 42.5%;   background-image:url('../img/game1b_item_zone5_bg.svg');  }
+.game1b .game1b_item_zone6{  top: 50%;   background-image:url('../img/game1b_item_zone6_bg.svg');  }
+.game1b .game1b_item_zone7{  top: 58%;   background-image:url('../img/game1b_item_zone7_bg.svg');  }
+.game1b .game1b_item_zone8{  top: 66%;   background-image:url('../img/game1b_item_zone8_bg.svg');  }
+.game1b .game1b_item_zone9{  top: 76%;   background-image:url('../img/game1b_item_zone9_bg.svg');  }
+.game1b .game1b_item_zone10{  top: 84%;  background-image:url('../img/game1b_item_zone10_bg.svg');  }
+
+.game1b .game1b_item_zone1.dropGreen{  background-image:url('../img/game1b_item_zone1_green.svg');  }
+.game1b .game1b_item_zone2.dropGreen{  background-image:url('../img/game1b_item_zone2_green.svg');  }
+.game1b .game1b_item_zone3.dropGreen{  background-image:url('../img/game1b_item_zone3_green.svg');  }
+.game1b .game1b_item_zone4.dropGreen{  background-image:url('../img/game1b_item_zone4_green.svg');  }
+.game1b .game1b_item_zone5.dropGreen{  background-image:url('../img/game1b_item_zone5_green.svg');  }
+.game1b .game1b_item_zone6.dropGreen{  background-image:url('../img/game1b_item_zone6_green.svg');  }
+.game1b .game1b_item_zone7.dropGreen{  background-image:url('../img/game1b_item_zone7_green.svg');  }
+.game1b .game1b_item_zone8.dropGreen{  background-image:url('../img/game1b_item_zone8_green.svg');  }
+.game1b .game1b_item_zone9.dropGreen{  background-image:url('../img/game1b_item_zone9_green.svg');  }
+.game1b .game1b_item_zone10.dropGreen{ background-image:url('../img/game1b_item_zone10_green.svg');  }
+
+.game1b .game1b_item_zone1.dropRed{  background-image:url('../img/game1b_item_zone1_red.svg');  }
+.game1b .game1b_item_zone2.dropRed{  background-image:url('../img/game1b_item_zone2_red.svg');  }
+.game1b .game1b_item_zone3.dropRed{  background-image:url('../img/game1b_item_zone3_red.svg');  }
+.game1b .game1b_item_zone4.dropRed{  background-image:url('../img/game1b_item_zone4_red.svg');  }
+.game1b .game1b_item_zone5.dropRed{  background-image:url('../img/game1b_item_zone5_red.svg');  }
+.game1b .game1b_item_zone6.dropRed{  background-image:url('../img/game1b_item_zone6_red.svg');  }
+.game1b .game1b_item_zone7.dropRed{  background-image:url('../img/game1b_item_zone7_red.svg');  }
+.game1b .game1b_item_zone8.dropRed{  background-image:url('../img/game1b_item_zone8_red.svg');  }
+.game1b .game1b_item_zone9.dropRed{  background-image:url('../img/game1b_item_zone9_red.svg');  }
+.game1b .game1b_item_zone10.dropRed{ background-image:url('../img/game1b_item_zone10_red.svg');  }
+
+.game1b .game1b_item_zone1.txt{  background-image:url('../img/game1b_item_zone1_txt.svg');  }
+.game1b .game1b_item_zone2.txt{  background-image:url('../img/game1b_item_zone2_txt.svg');  }
+.game1b .game1b_item_zone3.txt{  background-image:url('../img/game1b_item_zone3_txt.svg');  }
+.game1b .game1b_item_zone4.txt{  background-image:url('../img/game1b_item_zone4_txt.svg');  }
+.game1b .game1b_item_zone5.txt{  background-image:url('../img/game1b_item_zone5_txt.svg');  }
+.game1b .game1b_item_zone6.txt{  background-image:url('../img/game1b_item_zone6_txt.svg');  }
+.game1b .game1b_item_zone7.txt{  background-image:url('../img/game1b_item_zone7_txt.svg');  }
+.game1b .game1b_item_zone8.txt{  background-image:url('../img/game1b_item_zone8_txt.svg');  }
+.game1b .game1b_item_zone9.txt{  background-image:url('../img/game1b_item_zone9_txt.svg');  }
+.game1b .game1b_item_zone10.txt{ background-image:url('../img/game1b_item_zone10_txt.svg');  }
+
+.game1r .showFinalScore{     top: 1.8em!important; margin-left: -0.8em;}
+
+
+/* game 2 */
+
+.game2{ background: #fcc600; }
+.game2d .bt_dc_container{ right: 14em; top: 51%; }
+
+/* game 3 */
+
+.game3{  background: #fcc600; }
+
+.game3 #reponses{ display: none; }
+.game3 #bt_qcm_container{ display: none; transform:scale(0); z-index: 10; }
+.game3 #bt_qcm_container.active{ display: block; animation: anim_zoom_bounce .2s ease-out 0s 1 normal forwards;   }
+
+.game3 #bt_reponse_container{ display: none; transform:scale(0); }
+.game3 #bt_reponse_container.active{ display: block; animation: anim_zoom_bounce .2s ease-out 0s 1 normal forwards;  z-index: 10;  }
+
+.game3 .qcm_container { position: absolute; width: 100%; height:100%;   }
+.game3 .qcm_container li{ position: absolute; width: 4em; height: 4em;  background-image:url('../img/case_jaune.svg'); background-repeat: no-repeat; background-size:90% auto ; }
+.game3 .qcm_container li:hover{ cursor: pointer; }
+.game3 .qcm_container li div{position: absolute; width: 3em; height: 6em; top: -2em; left: 0.5em; background-repeat: no-repeat; background-size:100% auto ;  }
+.game3 .qcm_container li.active div{  background-image:url('../img/case_active_v.svg');   }
+
+.game3b .qcm_container li:nth-child(1){  left: 20%;  top: 45%; }
+.game3b .qcm_container li:nth-child(2){  left: 20%; top: 55.5%; }
+.game3b .qcm_container li:nth-child(3){  left: 20%; top: 69%; }
+
+.game3c .qcm_container li:nth-child(1){  left: 20%;  top: 45%; }
+.game3c .qcm_container li:nth-child(2){  left: 20%; top: 55.5%; }
+.game3c .qcm_container li:nth-child(3){  left: 20%; top: 69%; }
+
+.game3d .qcm_container li:nth-child(1){  left: 20%;  top: 45%; }
+.game3d .qcm_container li:nth-child(2){  left: 20%; top: 55.5%; }
+.game3d .qcm_container li:nth-child(3){  left: 20%; top: 69%; }
+
+.game3e .qcm_container li:nth-child(1){  left: 20%;  top: 42%; }
+.game3e .qcm_container li:nth-child(2){  left: 20%; top: 52%; }
+.game3e .qcm_container li:nth-child(3){  left: 20%; top: 62%; }
+.game3e .qcm_container li:nth-child(4){  left: 20%; top: 72%; }
+
+.game3r1 .showFinalScore{ top: 1em; margin-left: -.3em;}
+.game3r2 .showFinalScore{ top: 0.8em; margin-left: -.9em;}
+.game3r3 .showFinalScore{ top: 0.8em; margin-left: -.9em; }
+
+/* game 4 */
+
+.game4{  background: #fcc600; }
+
+
+.game4 #reponses{ display: none; }
+.game4 #bt_qcm_container{ display: none; animation:none; transform:scale(0); z-index: 10; }
+.game4 #bt_qcm_container.active{ display: block; animation: anim_zoom_bounce .2s ease-out 0s 1 normal forwards;   }
+
+.game4 #bt_reponse_container{ display: none;   animation:none; transform:scale(0); }
+.game4 #bt_reponse_container.active{ display: block; animation: anim_zoom_bounce .2s ease-out 0s 1 normal forwards;  z-index: 10;  }
+
+.game4 .qcm_container { position: absolute; width: 100%; height:100%;   }
+.game4 .qcm_container li{ position: absolute; width: 4em; height: 4em;  background-image:url('../img/case_jaune.svg'); background-repeat: no-repeat; background-size:90% auto ; }
+.game4 .qcm_container li:hover{ cursor: pointer; }
+.game4 .qcm_container li div{position: absolute; width: 3em; height: 6em; top: -2em; left: 0.5em; background-repeat: no-repeat; background-size:100% auto ;  }
+.game4 .qcm_container li.active div{  background-image:url('../img/case_active_v.svg');   }
+
+.game4b .qcm_container li:nth-child(1){  left: 37%;  top: 45%; }
+.game4b .qcm_container li:nth-child(2){  left: 37%; top: 55.5%; }
+.game4b .qcm_container li:nth-child(3){  left: 37%; top: 69%; }
+
+.game4c .qcm_container li:nth-child(1){  left: 27%;  top: 45%; }
+.game4c .qcm_container li:nth-child(2){  left: 27%; top: 55.5%; }
+.game4c .qcm_container li:nth-child(3){  left: 27%; top: 67%; }
+
+.game4d .qcm_container li:nth-child(1){  left: 37%;  top: 45%; }
+.game4d .qcm_container li:nth-child(2){  left: 37%; top: 55.5%; }
+.game4d .qcm_container li:nth-child(3){  left: 37%; top: 67%; }
+
+.game4e .qcm_container li:nth-child(1){  left: 37%;  top: 45%; }
+.game4e .qcm_container li:nth-child(2){  left: 37%; top: 56%; }
+.game4e .qcm_container li:nth-child(3){  left: 37%; top: 67%; }
+
+.game4f .qcm_container li:nth-child(1){  left: 30%;  top: 44%; }
+.game4f .qcm_container li:nth-child(2){  left: 30%; top: 54%; }
+.game4f .qcm_container li:nth-child(3){  left: 30%; top: 64%; }
+.game4f .qcm_container li:nth-child(4){  left: 30%; top: 74%; }
+
+
+.game4r1 .showFinalScore{ top:1em; margin-left: -.9em; }
+.game4r2 .showFinalScore{ top: 0.8em; margin-left: -.9em; }
+.game4r3 .showFinalScore{ top: 0.8em; margin-left: -.9em; }
