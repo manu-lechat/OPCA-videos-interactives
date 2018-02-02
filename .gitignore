@@ -1,3 +1,7 @@
+# Videos
+*.mp4
+*.webm
+
 # Prerequisites
 *.d
 
