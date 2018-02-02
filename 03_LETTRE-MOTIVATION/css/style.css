@@ -64,7 +64,7 @@
 .game1b .game1b_item_zone9.txt{  background-image:url('../img/game1b_item_zone9_txt.svg');  }
 .game1b .game1b_item_zone10.txt{ background-image:url('../img/game1b_item_zone10_txt.svg');  }
 
-.game1r .showFinalScore{     top: 1.8em!important; margin-left: -0.8em;}
+.game1r .showFinalScore{ top: 1.8em!important; margin-left: -1.2em; }
 
 
 /* game 2 */

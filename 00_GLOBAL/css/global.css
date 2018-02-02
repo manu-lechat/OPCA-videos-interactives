@@ -16,13 +16,40 @@
 ::selection {  background:rgba(0,0,0,0) }
 html { display: table; table-layout: fixed; width: 100%; height: 100%; }
 body { font-family: 'regular'; letter-spacing: 0.05em; display: table-cell; width: 100%; height: 100%; vertical-align: middle; margin:0; font-size: 1vw; background-color: #efefef;}
-a{  z-index: 100; transition:all .16s cubic-bezier(.17,.67,.27,1) ; opacity: 1; color:#000; position: absolute;  background-repeat: no-repeat;  background-size: 98% auto!important;  position: absolute;  width:13em; height: 5em;   }
+a{  z-index: 100; transition:all .16s cubic-bezier(.17,.67,.27,1); opacity: 1; color:#000; position: absolute;  background-repeat: no-repeat;  background-size: 98% auto!important;  position: absolute;  width:13em; height: 5em;   }
 a:hover{  cursor: pointer; transform:scale(1.04)!important; }
 a.active{  cursor: pointer; transform:scale(.9); opacity: 0; }
 div, section, video, ul, li, a{ display: block;   box-sizing: border-box;   background-repeat: no-repeat;  background-size: 100% auto; }
-video{ width: 100%; height: 100%; position: absolute;; opacity: 0; animation: anim_fadeIn .3s ease-out .5s 1 normal forwards;}
 
-video.plyr{ opacity: 0 }
+
+/* videos & plyr */
+
+
+video{ width: 100%; height: 100%; position: absolute; opacity: 0; }
+.page_ready video{  animation: anim_fadeIn .5s ease-out .3s 1 normal forwards; }
+
+
+
+/* plyr */
+
+.plyr { width: 100%; height: 100%; position: absolute!important; z-index: 0;   }
+
+
+
+.plyr .plyr__controls { background: none!important; color: #569cb2!important; opacity: 0; animation: anim_fadeIn .3s ease-out 1.6s 1 normal forwards; z-index: 2}
+.plyr .plyr__progress--played, .plyr__volume--display { color: #569cb2!important }
+.plyr .plyr__progress--buffer, .plyr--video .plyr__volume--display {   background:#569cb2!important; opacity: 0.2!important}
+#sprite-plyr{ display: none; }
+.plyr__play-large{ opacity: 0;   animation: anim_fadeIn .5s ease-out 2s 1 normal forwards;  }
+.plyr--audio { display: none }
+.plyr__video-wrapper{ background: #fff!important; }
+
+
+a:active{  outline: none; opacity: 0; transition: none; }
+a:focus{  outline: none;   }
+a:checked{  outline: none;  }
+
+
 
 a.fadeOut{ animation: anim_fadeOut .2s ease-out 0s 1 normal forwards; }
 a.fadeOut img{ animation: anim_fadeOut .2s ease-out 0s 1 normal forwards; }
@@ -136,17 +163,7 @@ a.fadeOut img{ animation: anim_fadeOut .2s ease-out 0s 1 normal forwards; }
 .qcm_container li:nth-child(5n+4)  { opacity: 0;  transform:scale(0); animation: anim_zoom_bounce .3s ease-out .4s 1 normal forwards;  }
 .qcm_container li:nth-child(5n+5)  { opacity: 0;  transform:scale(0); animation: anim_zoom_bounce .3s ease-out .5s 1 normal forwards;  }
 
-/* plyr */
 
-.plyr { width: 100%; height: 100%; position: absolute!important; z-index: 0;   }
-.plyr video{ opacity: 0;  animation: anim_fadeIn .3s ease-out .3s 1 normal forwards; }
-.plyr .plyr__controls { background: none!important; color: #569cb2!important; opacity: 0; animation: anim_fadeIn .3s ease-out 1.6s 1 normal forwards; z-index: 2}
-.plyr .plyr__progress--played, .plyr__volume--display { color: #569cb2!important }
-.plyr .plyr__progress--buffer, .plyr--video .plyr__volume--display {   background:#569cb2!important; opacity: 0.2!important}
-#sprite-plyr{ display: none; }
-.plyr__play-large{ transition:all .3s .3s; }
-.plyr--audio { display: none }
-.plyr__video-wrapper{ background: #fff!important; }
 
 
 /* keyframes party **************************************************************************/
