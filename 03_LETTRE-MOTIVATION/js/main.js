@@ -40,6 +40,43 @@ var newPageReady = function() {
         oo_page = new VideoPlayer();
     }
 
+    //****** Hack for unmute video *******//
+    // detection des clicks sur les boutons pour lancer les vidéos
+    var a_onclick = document.getElementsByTagName('a');
+    for (var i = 0; i < a_onclick.length; i++) {
+        a_onclick[i].addEventListener('click', function(e){
+
+          setTimeout(function(e) {
+            UnMuteVideo(e);
+          }, 800);
+        }, false);
+    }
+
+    function UnMuteVideo(e){
+      console.log("#### UnMuteVideo function found " + document.getElementsByTagName('video').length + " video");
+      if (document.getElementsByTagName('video').length > 0) {
+        var myVideo = document.getElementsByTagName('video')[0];
+        console.log("#### myVideo.currentTime" + myVideo.currentTime);
+        if(myVideo.currentTime > 0 && !myVideo.paused && !myVideo.ended && myVideo.readyState > 2){
+          console.log("#### video playing");
+          if (  myVideo.hasAttribute('muted')) {
+            console.log('#### remove attribute muted');
+            myVideo.muted = false;
+            myVideo.removeAttribute("muted");
+            myVideo.volume = 0.5;
+          }
+        }else{
+          console.log("#### play and loop");
+          myVideo.play();
+          setTimeout(function(e) {
+            UnMuteVideo(e);
+          }, 400);
+        }
+      }
+    }
+    //****** /Hack for unmute video *******//
+
+
 };
 
 function showScoreGame1() {

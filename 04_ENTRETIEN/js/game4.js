@@ -12,7 +12,7 @@ var Game4 = function() {
         config_redirect();
     }
 
-    // si showFinalScore -> showFinalScore 
+    // si showFinalScore -> showFinalScore
     if (document.getElementById("showFinalScore")) {
         showFinalScore();
     }
@@ -76,7 +76,7 @@ var Game4 = function() {
                 bt_reponse_container.classList.remove('active');
                 bt_qcm_container.classList.add('active');
 
-                // activation du bouton 
+                // activation du bouton
 
                 var ul_item = document.getElementsByClassName('qcm_container')[0];
                 var li_list = ul_item.getElementsByTagName('li');
@@ -95,7 +95,7 @@ var Game4 = function() {
                     if (li_list[i].getAttribute('istrue') == 'true' && li_list[i].classList.contains('active')) {
                         score++;
                     }
-                    // si c'est une réponse fausse et que c'est coché : 
+                    // si c'est une réponse fausse et que c'est coché :
                     else if (li_list[i].getAttribute('istrue') == 'false' && li_list[i].classList.contains('active')) {
                         score--;
                     }
@@ -118,7 +118,7 @@ var Game4 = function() {
                 }
             }, false);
 
-        // bt_qcm_container s'efface qd on le clique 
+        // bt_qcm_container s'efface qd on le clique
         bt_qcm_container.addEventListener('click',
             function(e) {
 
@@ -142,11 +142,11 @@ var Game4 = function() {
 
             console.log('final_score : ' + final_score);
             if (final_score == 20) {
-                location.href = ("4r1_Preparer_votre_liste.php");
+                Barba.Pjax.goTo("4r1_Preparer_votre_liste.php");
             } else if (final_score === 0) {
-                location.href = ("4r3_Preparer_votre_liste.php");
+                Barba.Pjax.goTo("4r3_Preparer_votre_liste.php");
             } else {
-                location.href = ("4r2_Preparer_votre_liste.php");
+                Barba.Pjax.goTo("4r2_Preparer_votre_liste.php");
             }
 
         }, false);

@@ -81,28 +81,28 @@ var VideoPlayer = function() {
 
             case 'video1':
                 // fin de la vidéo 1 -> on passe à game1a
-                location.href = ("1a_Les_grands_paragraphes.php");
+                Barba.Pjax.goTo("1a_Les_grands_paragraphes.php");
                 break;
             case 'video2':
                 // fin de la vidéo 2 -> on passe à game2a
-                location.href = ("2a_Se_preparer.php");
+                Barba.Pjax.goTo("2a_Se_preparer.php");
                 break;
             case 'video3':
                 // fin de la vidéo 3 -> on passe à game3a
-                location.href = ("3a_Trouver_la_bonne_formule.php");
+                Barba.Pjax.goTo("3a_Trouver_la_bonne_formule.php");
                 break;
             case 'video4':
                 // fin de la vidéo 4 -> on passe à game4a
-                location.href = ("4a_Les-atouts.php");
+                Barba.Pjax.goTo("4a_Les-atouts.php");
                 break;
             case 'video5':
                 setTimeout(function() {
-                    location.href = ("ecran_fin.php");
+                  Barba.Pjax.goTo("ecran_fin.php");
                 }, 2000);
                 break;
             case 'video1234':
                 setTimeout(function() {
-                    location.href = ("index.php");
+                  Barba.Pjax.goTo("index.php");
                 }, 5000);
                 break;
             }

@@ -12,7 +12,7 @@ var Game3 = function() {
         config_redirect();
     }
 
-    // si showFinalScore -> showFinalScore 
+    // si showFinalScore -> showFinalScore
     if (document.getElementById("showFinalScore")) {
         showFinalScore();
     }
@@ -76,7 +76,7 @@ var Game3 = function() {
                 bt_reponse_container.classList.remove('active');
                 bt_qcm_container.classList.add('active');
 
-                // activation du bouton 
+                // activation du bouton
 
                 var ul_item = document.getElementsByClassName('qcm_container')[0];
                 var li_list = ul_item.getElementsByTagName('li');
@@ -95,7 +95,7 @@ var Game3 = function() {
                     if (li_list[i].getAttribute('istrue') == 'true' && li_list[i].classList.contains('active')) {
                         score++;
                     }
-                    // si c'est une réponse fausse et que c'est coché : 
+                    // si c'est une réponse fausse et que c'est coché :
                     else if (li_list[i].getAttribute('istrue') == 'false' && li_list[i].classList.contains('active')) {
                         score--;
                     }
@@ -137,11 +137,11 @@ var Game3 = function() {
 
             console.log('final_score : ' + final_score);
             if (final_score == 7) {
-                location.href = ("3r1_Trouver_la_bonne_formule.php");
+                Barba.Pjax.goTo("3r1_Trouver_la_bonne_formule.php");
             } else if (final_score === 0) {
-                location.href = ("3r3_Trouver_la_bonne_formule.php");
+                Barba.Pjax.goTo("3r3_Trouver_la_bonne_formule.php");
             } else {
-                location.href = ("3r2_Trouver_la_bonne_formule.php");
+                Barba.Pjax.goTo("3r2_Trouver_la_bonne_formule.php");
             }
 
         }, false);

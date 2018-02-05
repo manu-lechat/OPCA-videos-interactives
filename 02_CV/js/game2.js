@@ -16,7 +16,7 @@ var Game2 = function() {
         }
 
     }
-    // si showFinalScore -> showFinalScore 
+    // si showFinalScore -> showFinalScore
     if (document.getElementById("showFinalScore")) {
         showFinalScore();
     }
@@ -30,7 +30,7 @@ var Game2 = function() {
         }, false);
     }
 
-    // si showFinalScore -> showFinalScore 
+    // si showFinalScore -> showFinalScore
     if (document.getElementById("showFinalScore")) {
         showFinalScore();
     }
@@ -82,7 +82,7 @@ var Game2 = function() {
             if (li_list[i].getAttribute('istrue') == 'true' && li_list[i].classList.contains('active')) {
                 score++;
             }
-            // si c'est une réponse fausse et que c'est coché : 
+            // si c'est une réponse fausse et que c'est coché :
             else if (li_list[i].getAttribute('istrue') == 'false' && li_list[i].classList.contains('active')) {
                 if (score > 0) {
                     score--;
@@ -124,11 +124,11 @@ var Game2 = function() {
         console.log('final_score : ' + final_score);
 
         if (final_score == 5) {
-            location.href = ("2g1_Les_intitules.php");
+            Barba.Pjax.goTo("2g1_Les_intitules.php");
         } else if (final_score === 0) {
-            location.href = ("2g3_Les_intitules.php");
+            Barba.Pjax.goTo("2g3_Les_intitules.php");
         } else {
-            location.href = ("2g2_Les_intitules.php");
+            Barba.Pjax.goTo("2g2_Les_intitules.php");
         }
 
     }

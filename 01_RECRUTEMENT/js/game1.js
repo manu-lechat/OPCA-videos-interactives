@@ -10,7 +10,7 @@ var Game1 = function() {
         playGame();
     }
 
-    // si showFinalScore -> showFinalScore 
+    // si showFinalScore -> showFinalScore
     if (document.getElementById("showFinalScore")) {
         showFinalScore();
     }
@@ -72,7 +72,7 @@ var Game1 = function() {
                     if (li_list[i].getAttribute('istrue') == 'true' && li_list[i].classList.contains('active')) {
                         score++;
                     }
-                    // si c'est une réponse fausse et que c'est coché : 
+                    // si c'est une réponse fausse et que c'est coché :
                     else if (li_list[i].getAttribute('istrue') == 'false' && li_list[i].classList.contains('active')) {
                         score--;
                     }
@@ -90,11 +90,11 @@ var Game1 = function() {
 
                 // redirection
                 if (score_pct == 100) {
-                    location.href = ("1cc_Rediger_l_annonce.php");
+                    Barba.Pjax.goTo("1cc_Rediger_l_annonce.php");
                 } else if (score_pct === 0) {
-                    location.href = ("1ca_Rediger_l_annonce.php");
+                    Barba.Pjax.goTo("1ca_Rediger_l_annonce.php");
                 } else {
-                    location.href = ("1cb_Rediger_l_annonce.php");
+                    Barba.Pjax.goTo("1cb_Rediger_l_annonce.php");
                 }
 
             }, false);

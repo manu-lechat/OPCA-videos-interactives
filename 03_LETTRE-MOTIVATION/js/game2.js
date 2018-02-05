@@ -64,11 +64,11 @@ var Game2 = function() {
         console.log('result : ' + game2_result);
         localStorage.setItem("game2_result", game2_result);
         if (game2_result == 5) {
-            location.href = ("2g1_Les_intitules.php");
+            Barba.Pjax.goTo("2g1_Les_intitules.php");
         } else if (game2_result === 0) {
-            location.href = ("2g3_Les_intitules.php");
+            Barba.Pjax.goTo("2g3_Les_intitules.php");
         } else {
-            location.href = ("2g2_Les_intitules.php");
+            Barba.Pjax.goTo("2g2_Les_intitules.php");
         }
     }
 

@@ -34,7 +34,6 @@ var VideoPlayer = function() {
         var ua = navigator.userAgent.toLowerCase();
         var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
         if (isIphone || is_iPad || isAndroid || isSafari ) {
-            myVideo.volume = 0;
             myVideo.muted = true;
             myVideo.autoplay = true;
             myVideo.setAttribute('muted', '');
@@ -62,24 +61,24 @@ var VideoPlayer = function() {
 
               case 'video1':
                   // fin de la vidéo 1 -> on passe à game1a
-                  location.href = ("1a_Un_cv_reussi.php");
+                  Barba.Pjax.goTo("1a_Un_cv_reussi.php");
                   break;
               case 'video2':
                   // fin de la vidéo 2 -> on passe à game2a
-                  location.href = ("2a_Les_intitules.php");
+                  Barba.Pjax.goTo("2a_Les_intitules.php");
                   break;
               case 'video3':
                   // fin de la vidéo 3 -> on passe à game3a
-                  location.href = ("3a_Les_erreurs_du_CV.php");
+                  Barba.Pjax.goTo("3a_Les_erreurs_du_CV.php");
                   break;
               case 'video4':
                   setTimeout(function() {
-                      location.href = ("ecran_fin.php");
+                    Barba.Pjax.goTo("ecran_fin.php");
                   }, 2000);
                   break;
               case 'video1234':
                   setTimeout(function() {
-                      location.href = ("index.php");
+                    Barba.Pjax.goTo("index.php");
                   }, 4000);
                   break;
           }

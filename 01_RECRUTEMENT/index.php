@@ -3,7 +3,7 @@
 
 <div class="barba-container page_container index" data-namespace="index">
 
-	<audio id="sound_page" audio_src="01_VirguleSonore-EcranAccueil.mp3"></audio>
+	<audio id="sound_page" autoplay audio_src="01_VirguleSonore-EcranAccueil.mp3"></audio>
 	<!-- titre -->
 	<img src="img/index_titre.svg" alt="" class="reveal1">
 	<!-- logo -->

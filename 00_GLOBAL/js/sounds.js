@@ -16,7 +16,7 @@ var ConfigSound = function() {
     var min_Sound_pausePromise;
     var min_Sound_playPromise;
 
-    // gestion des sons sur certaines pages 
+    // gestion des sons sur certaines pages
     if (document.getElementById("sound_page")) {
         var audio_src = document.getElementById("sound_page").getAttribute('audio_src');
         playMainSound(audio_src);
@@ -58,7 +58,7 @@ var ConfigSound = function() {
 
     // sons cases à cocher
     var cases_a_cocher = document.querySelectorAll('.qcm_container li');
-    console.log('cases_a_cocher : ' + cases_a_cocher.length)
+    //console.log('cases_a_cocher : ' + cases_a_cocher.length)
     for (var i = 0; i < cases_a_cocher.length; i++) {
         cases_a_cocher[i].addEventListener('mouseenter', function() {
             playMinSound("04.1_CasesAselectionner-RollOver.mp3");
@@ -70,7 +70,7 @@ var ConfigSound = function() {
 
     // sons fleche_jaune
     var sound_fleche_jaune = document.getElementsByClassName('sound_fleche_jaune');
-    console.log("sound_fleche_jaune : " + sound_fleche_jaune.length);
+    //console.log("sound_fleche_jaune : " + sound_fleche_jaune.length);
     for (var i = 0; i < sound_fleche_jaune.length; i++) {
 
         sound_fleche_jaune[i].addEventListener('mouseenter', function() {
@@ -84,7 +84,7 @@ var ConfigSound = function() {
 
     function playMainSound(src) {
 
-        console.log('playMainSound = ' + src);
+        //console.log('playMainSound = ' + src);
 
         // pour les sons de certaines pages
         mySound_pausePromise = mySound.pause();
@@ -103,7 +103,7 @@ var ConfigSound = function() {
 
     function playMinSound(src) {
 
-        console.log('playMinSound = ' + src);
+        //console.log('playMinSound = ' + src);
         // pour les bruitages
         min_Sound_pausePromise = min_Sound.pause();
         if (min_Sound_pausePromise !== undefined) {

@@ -17,7 +17,7 @@ var Game3 = function() {
         config_redirect();
     }
 
-    // si showFinalScore -> showFinalScore 
+    // si showFinalScore -> showFinalScore
     if (document.getElementById("showFinalScore")) {
         showFinalScore();
     }
@@ -58,7 +58,7 @@ var Game3 = function() {
             });
         }
 
-        // gestion du score sur bt_qcm 
+        // gestion du score sur bt_qcm
         bt_qcm.addEventListener('click',
             function(e) {
 
@@ -76,7 +76,7 @@ var Game3 = function() {
                     if (li_list[i].getAttribute('istrue') == 'true' && li_list[i].classList.contains('active')) {
                         score++;
                     }
-                    // si c'est une réponse fausse et que c'est coché : 
+                    // si c'est une réponse fausse et que c'est coché :
                     else if (li_list[i].getAttribute('istrue') == 'false' && li_list[i].classList.contains('active')) {
                         if (score > 0) {
                             score--;
@@ -155,11 +155,12 @@ var Game3 = function() {
             console.log('final_score : ' + final_score);
 
             if (final_score == 7) {
-                location.href = ("3j1_Les_erreurs_du_CV.php");
+                Barba.Pjax.goTo("3j1_Les_erreurs_du_CV.php");
+
             } else if (final_score === 0) {
-                location.href = ("3j3_Les_erreurs_du_CV.php");
+                Barba.Pjax.goTo("3j3_Les_erreurs_du_CV.php");
             } else {
-                location.href = ("3j2_Les_erreurs_du_CV.php");
+                Barba.Pjax.goTo("3j2_Les_erreurs_du_CV.php");
             }
 
         }, false);

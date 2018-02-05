@@ -84,13 +84,14 @@ var Game2 = function() {
 
         // changement de la video
         var myVideo = document.getElementsByTagName('video')[0];
-        //myVideo.className = 'fadeOut';
+        myVideo.className = 'fadeOut';
         setTimeout(function() {
+
             newVideoSrc = 'videos/game2b_bg' + currentSlide + '.mp4'
             myVideo.setAttribute("src", newVideoSrc);
             myVideo.className = 'fadeIn';
             oo_video = new VideoPlayer();
-        }, 10);
+        }, 300);
 
     }
 
@@ -141,7 +142,7 @@ var Game2 = function() {
         }
 
         console.log("winner is " + winner);
-        location.href = ("2c" + winner + "_Test_du_recruteur.php");
+        Barba.Pjax.goTo("2c" + winner + "_Test_du_recruteur.php");
 
     }
 
