@@ -27,6 +27,7 @@ function PuceG(x, y, id) {
     this.div.class('puceG puceG' + id);
     this.div.mousePressed(function() {
         live_ligne(id);
+        clignotte_puceD(id);
     });
     this.div.mouseOver(function() {
         isLiving_None();
@@ -38,8 +39,25 @@ function PuceG(x, y, id) {
 
 }
 
+function clignotte_puceD(id_divG){
+
+  for (var i = allPucesD.length - 1; i >= 0; i--) {
+    if (allPucesD[i].div.isFixed) {
+      allPucesD[i].div.addClass('green');
+    }else{
+      allPucesD[i].div.removeClass('green');
+      allPucesD[i].div.removeClass('red');
+    }
+    if (allPucesD[i].goodLineId == id_divG) {
+        allPucesD[i].div.addClass('green');
+    }
+  };
+}
+
 function PuceD(x, y, id, goodLineId) {
 
+    this.goodLineId = goodLineId;
+    this.id = id;
     this.div = createDiv("");
     this.div.parent('sketch_container');
     this.div.class('puceD puceD' + id);
@@ -55,9 +73,13 @@ function PuceD(x, y, id, goodLineId) {
     });
 }
 
+
+
 function setup() {
 
-
+    var width =  document.body.clientWidth;
+   var height = Math.round(width * 0.5625);
+    console.log(width+ " / " + height);
 
     if(document.getElementById('sketch_container')){
 
@@ -159,6 +181,7 @@ function draw() {
 
     if(document.getElementById('sketch_container')){
         clear();
+        ellipse(mouseX, mouseY, 5, 5);
         noFill();
         stroke('#4e96b3');
         strokeWeight(4);

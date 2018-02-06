@@ -43,7 +43,7 @@ video{ width: 100%; height: 100%; position: absolute; opacity: 0; }
 .plyr__play-large{ opacity: 0;   animation: anim_fadeIn .5s ease-out 2s 1 normal forwards;  }
 .plyr--audio { display: none }
 .plyr__video-wrapper{ background: #fff!important; }
-
+.plyr .plyr__play-large { display: none }
 
 a:active{  outline: none; opacity: 0; transition: none; }
 a:focus{  outline: none;   }
