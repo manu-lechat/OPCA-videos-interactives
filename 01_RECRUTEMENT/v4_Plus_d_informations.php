@@ -18,9 +18,10 @@ index.php?option=com_content&view=article&id=297&Itemid=1298" target="_blank" cl
 	</div>
 	<!-- screen intercations 1 -->
 	<div class="video_ui ui3" id="video4_ui3">
-		<a href="http://www.opca-transports.com/" target="_blank" class="bt1"></a>
-		<a href="http://emploi-competences-adec.fr/" target="_blank" class="bt2"></a>
-		<a href="https://www.neodigital.fr/" target="_blank" class="bt3"></a>
+		<a href="http://www.opca-transports.com/" target="_blank" class="bt_opca"></a>
+		<a href="http://emploi-competences-adec.fr/" target="_blank" class="bt_adec"></a>
+		<div class="bt_rf"></div>
+		<a href="https://www.neodigital.fr/" target="_blank" class="bt_neodig"></a>
 	</div>
 
 

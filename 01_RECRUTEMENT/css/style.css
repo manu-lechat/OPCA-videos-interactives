@@ -176,11 +176,19 @@
 .video4 .ui2{  transform:scale(0);opacity: 0; transition:all .3s ease-out; }
 .video4 .ui3{ transform:scale(0); opacity: 0; transition:opacity .3s ease-out; }
 .video4 .active{  transform:scale(1); opacity: 1!important }
-.video4 .ui1 .bt1{ animation: anim_video4_ui1_bt1 1s ease-in-out 0s infinite normal forwards; width: 40em; height: 6em; left: 50%; margin-left: -20em; top: 50%;background-image: url('../img/video4_ui1_bt1.svg'); }
-.video4 .ui2 .bt1{ animation: anim_video4_ui2_bt1 1s ease-in-out 0s infinite normal forwards; width: 7em; height: 7.5em; left: 50%; margin-left: -3.5em; top: 55%; background-image: url('../img/video4_ui2_bt1.svg'); }
-.video4 .ui3 .bt1{ animation: anim_video4_ui3_bt 1s ease-in-out 0s infinite normal forwards; opacity: 0; width: 6.4em; height: 11em; left: 39.9%; top: 17%; background-image: url('../img/video4_ui3_bt1.png'); }
-.video4 .ui3 .bt2{ animation: anim_video4_ui3_bt 1s ease-in-out 0s infinite normal forwards; opacity: 0;   width: 7.3em; height: 8em; left: 52%; top: 18%;background-image: url('../img/video4_ui3_bt2.svg'); }
-.video4 .ui3 .bt3{ animation: anim_video4_ui3_bt 1s ease-in-out 0s infinite normal forwards; opacity: 0;  width: 12em; height: 11em; left: 44%; top: 93%;background-image: url('../img/video4_ui3_bt3.svg'); }
+
+
+
+.video4 .ui1 .bt_opca{ animation: anim_video4_ui1_bt1 1s ease-in-out 0s infinite normal forwards; width: 40em; height: 6em; left: 50%; margin-left: -20em; top: 50%;background-image: url('../img/video4_ui1_bt1.svg'); }
+.video4 .ui2 .bt_opca{ animation: anim_video4_ui2_bt1 1s ease-in-out 0s infinite normal forwards; width: 7em; height: 7.5em; left: 50%; margin-left: -3.5em; top: 55%; background-image: url('../img/video4_ui2_bt1.svg'); }
+.video4 .ui3 .bt_opca{ animation: anim_video4_ui3_bt 1s ease-in-out 0s 4 normal forwards; opacity: 0; width: 5.5em; height: 11em; left: 27%; top: 16.5%; background-image: url('../img/video4_ui3_bt1.png'); }
+.video4 .ui3 .bt_adec{ animation: anim_video4_ui3_bt 1s ease-in-out 0s 4 normal forwards; opacity: 0;   width: 14em; height: 10em; left: 37.4%; top: 16.5%;background-image: url('../img/video4_ui3_bt_adec.svg'); }
+.video4 .ui3 .bt_rf{ position: absolute; animation: anim_fadeIn .6s ease-out .1s 1 normal forwards; opacity: 0;   width: 17em; height: 8em; left: 56%; top: 17.3%;background-image: url('../img/video4_ui3_bt_rf.svg'); }
+.video4 .ui3 .bt_neodig{ animation: anim_video4_ui3_bt 1s ease-in-out 0s infinite normal forwards; opacity: 0;  width: 12em; height: 11em; left: 44%; top: 93%;background-image: url('../img/video4_ui3_bt3.svg'); }
+
+
+
+
 .video4 .ui3.active { animation: anim_fadeIn .6s ease-out .1s 1 normal forwards; }
 
 /* video 1234 */
